@@ -1,0 +1,32 @@
+/* 현제 로딩 */
+.loader {
+    margin: 0 0 2em;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #2B3134;
+}
+
+.loader > svg {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.loader > svg path,
+.loader > svg rect {
+    fill: #FF6700;
+}
+
+/* 현제 로딩 */

@@ -1,0 +1,422 @@
+
+.aa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+body {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.scroll_control {
+    overflow: hidden;
+}
+
+.wrap {
+    width: 1400px;
+    margin: auto;
+    text-align: center;
+}
+
+.home-top {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 1rem 1rem 0 0 ;
+    margin-left: 50rem;
+    -webkit-animation: homeShow 1s forwards ease;
+    animation: homeShow 1s forwards ease;
+    z-index: 500;
+    text-align: right;
+    
+}
+
+@-webkit-keyframes homeShow {
+    0% {
+        margin-left: 50rem;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes homeShow {
+    0% {
+        margin-left: 50rem;
+    }
+    100% {
+        margin-left: 0
+    }
+}
+
+.home-top span a {
+    font-size: 4vmin;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.home-top span a span {
+    color: #a33;
+    font-weight: bold;
+    font-size: 4vmin;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+
+
+.choice-bottom {
+    white-space: nowrap;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    cursor: default;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin-left: -100rem;
+    -webkit-animation: choiceShow 1s forwards ease;
+    animation: choiceShow 1s forwards ease;
+}
+
+@-webkit-keyframes choiceShow {
+    0% {
+        margin-left: -100rem;
+    }
+    100% {
+        margin-left: 0;
+        padding-left: 1rem;
+
+    }
+}
+
+@keyframes choiceShow {
+    0% {
+        margin-left: -100rem;
+    }
+    100% {
+        margin-left: 0;
+        padding-left: 1rem;
+
+    }
+}
+
+.choice-bottom {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: #333;
+}
+
+.choice-bottom span {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #a33;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+
+.pp_bg {
+    cursor: default;
+    z-index: -1;
+    width: 100%;
+    top: 20%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 15vw;
+    font-weight: bold;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    opacity: 0;
+    -webkit-animation: ppBgShow 5s 2s forwards ease;
+    animation: ppBgShow 5s 2s forwards ease;
+}
+
+@-webkit-keyframes ppBgShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes ppBgShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+/**/
+
+.flip_control {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 500;
+}
+
+.flip_control ul li {
+    width: 25%;
+    float: left;
+}
+
+.back h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.front i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+.flip > .front,
+.flip > .back {
+    display: block;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition-duration: 3s;
+    -o-transition-duration: 3s;
+    transition-duration: 3s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.flip > .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.flip:hover > .front {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip:hover > .back {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip.flip-vertical > .back {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.flip.flip-vertical:hover > .front {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.flip.flip-vertical:hover > .back {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.flip {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    -webkit-animation: flipShow 1.5s 1s forwards ease-in-out;
+    animation: flipShow 1.5s 1s forwards ease-in-out;
+    opacity: 0;
+    margin: 10px;
+    max-width: 350px;
+
+}
+
+.flip > .front,
+.flip > .back {
+    display: block;
+    color: white;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 400px;
+    /*    background: #888;*/
+    background-image: -webkit-linear-gradient(57deg, #503136, #756258, #9b967d, #c1cea3);
+    background-image: -o-linear-gradient(57deg, #503136, #756258, #9b967d, #c1cea3);
+    background-image: linear-gradient(33deg, #503136, #756258, #9b967d, #c1cea3);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.flip > .front p,
+.flip > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+
+@-webkit-keyframes flipShow {
+    0% {
+        opacity: 0;
+        margin-top: 10rem;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes flipShow {
+    0% {
+        opacity: 0;
+        margin-top: 10rem;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+/*클라우드*/
+
+.cloud1 img {
+    position: fixed;
+    opacity: .2;
+    top: -15rem;
+    left: 0rem;
+    margin-left: -40rem;
+    -webkit-animation: cloud1 80s infinite alternate;
+    animation: cloud1 80s infinite alternate;
+    z-index: -20;
+}
+
+@-webkit-keyframes cloud1 {
+    0% {
+        margin-left: -40rem;
+    }
+    100% {
+        margin-left: 50rem;
+    }
+}
+
+@keyframes cloud1 {
+    0% {
+        margin-left: -40rem;
+    }
+    100% {
+        margin-left: 50rem;
+    }
+}
+
+.cloud2 img {
+    width: 20%;
+    position: fixed;
+    bottom: -5rem;
+    right: 0;
+    opacity: .2;
+    margin-right: -10rem;
+    -webkit-animation: cloud2 80s infinite alternate;
+    animation: cloud2 80s infinite alternate;
+    z-index: -20;
+}
+
+@-webkit-keyframes cloud2 {
+    0% {
+        margin-right: -10rem
+    }
+    100% {
+        margin-right: 100rem
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        margin-right: -10rem
+    }
+    100% {
+        margin-right: 100rem
+    }
+}
+
+
+@media(max-width:1170px) {
+    .wrap {
+        width: 100%;
+    }
+    .flip_control ul li {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media(max-width:420px) {
+    .flip {
+        width: 60%;
+    }
+    .flip .back,
+    .flip .front {
+        height: 250px;
+    }
+    .home-top span a {
+        font-size: 1.2rem;
+    }
+    .home-top span a span {
+        font-size: 1.2rem
+    }
+    .choice-bottom {
+        font-size: 1.2rem;
+        margin-left: 20px;
+        white-space: normal;
+        position: static;
+    }
+    .choice-bottom span {
+        font-size: 1.2rem;
+    }
+    .flip_control {
+        margin: 20px 0;
+        position: static;
+        top: auto;
+        left: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}

@@ -1,0 +1,249 @@
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.back{
+    background-image: url(../../common/img/sense/112.jpg);
+    width: 100%;
+    height: 300px;
+}
+.area_menu {position: relative}
+.menu {overflow:hidden;}
+.menu > li {width:25; float:left;}
+.menu a {display:block; padding:10px; text-align:center;}
+.area_menu {background-color:black;}
+.box_text {}
+.box_text img {display:block; width:100%;}
+.box{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    display: none;
+    background-color:black;
+}
+.box_content {position:relative; width:400px; height:400px; color:#fff; background-color:green;}
+.box_content .bg {position:absolute; top:0; display:none; width:100%; height:100%; background-color:black; opacity:0.7;}
+.menu li a:hover .bg {display:block;}
+
+.test{
+    
+}
+@media(max-width:1200px){
+    .wrap {width:100%;
+        transition: 2s;
+    }
+}
+@media(max-width:400px){
+    .menu > li {width:50%;
+        transition: 2s;
+    }
+}
+@media(max-width:200px){
+    .menu>li{display: none; 
+    }
+    .box{
+        display: block;
+    }
+}
+
+.boxx{
+    width: 50%;
+    float: left;
+}
+.boxx img{
+    width: 100%;
+}
+.layout:after {display:block; content:""; clear:both;}
+.layout{ 
+}
+.bdb{
+    height: 200px;
+    border: 1px solid red;
+}
+
+.rap{
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+}
+.table{
+    background-color: brown;
+    text-align: center;
+    border-radius: 10px;
+    transition: 2s;
+
+}
+.table:after {display:block; content:""; clear:both}
+
+.table_nav_back{
+    background-color: #dbdbdb;
+    margin-bottom: 20px;
+}
+.table_cell{
+    width: 20%;
+    float: left;
+    line-height: 50px;
+    height: 100%;
+    border-right: 1px solid #c6c6c6;
+    height: 50px;
+    color: aliceblue;
+    transition: .5s;
+}
+
+.table_cell:hover{
+    color: yellow;
+    transition: .5s;
+    font-size: 1.1rem;
+}
+.background{
+    background-image: url(../../common/img/sense/backback.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+}
+.background_test{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+    background-color: black;
+    display: none;
+    text-align: center;
+    transition: 2s;
+}
+.background_test p{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 300px;
+    font-weight: 900;
+    transform: rotate(10deg);
+    
+}
+.background:hover .background_test{
+    display: block;
+    transition: 2s;
+}
+
+.second_pic{
+    text-align: center;
+}
+.second_pic:after {display:block; content:""; clear:both}
+.second_pic img{
+    width: 100%;
+    height: 100%;
+}
+.pic{
+    width: 33%;
+    float: left;
+    padding: 5px;
+    transition: .5s;
+}
+.pic:hover{
+    opacity: 0.5;
+    transition: .5s;
+}
+.pic h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.mobile{
+    display: none;
+    float: right;
+    margin-right: 1rem;
+    text-align: center;
+    width: 100px;
+    transition: 2s;
+}
+
+.pic1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+}
+.pic_test{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+}
+.pic1:hover .pic_test{
+    display: block;
+}
+
+
+
+footer{
+    background-color: #23264c;height: 200px;
+}
+.footer i{
+    line-height: 200px;
+}
+.footer address i {
+    color: #fff;
+}
+.sign{
+    background-color: #0f1019;
+    text-align: center;
+}
+.sign p{
+    color: aliceblue;
+    height: 100px;
+}
+@media(max-width:1240px){
+    .rap{
+        width: 100%;
+    }
+}
+@media(max-width:820px){
+    .table_cell{
+        width: 33.3%;
+        color: chartreuse;
+    }
+    .table{
+         background-color: black;
+    }
+    .pic{
+    width: 50%;
+}
+}
+@media(max-width:400px){
+    .table_cell{
+        display: none;
+        transition: 2s; 
+    }
+    .mobile{
+        display: block;
+        transition: 2; 
+    }
+    .mobile a{
+        color: #fff;
+    }
+    .table{
+        background-color: darkslategray;
+    }
+    .pic{
+    width: 100%;
+}
+    footer{
+        height: 100px;
+        background-color:#1e2021;
+    }
+    .sign{
+        height: 50px;
+        background-color: #000;
+    }
+    .footer i{
+    line-height: 100px;
+}
+}

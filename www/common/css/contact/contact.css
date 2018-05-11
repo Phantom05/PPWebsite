@@ -1,0 +1,368 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Francois One', sans-serif;
+*/
+
+body{
+/*    overflow-x: hidden;*/
+}
+.wrap{
+    width: 1480px;
+    margin: auto;
+}
+body{
+    background: rgb(242, 242, 242);
+}
+.font-color{
+    color: #a6a6a6;
+}
+.scroll_header{
+    transition: 1s ease;
+    opacity: 0;
+    height: 35px;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    z-index: 500;
+}
+.scriooll_header-open{
+    opacity: 1;
+    transition: 1s ease;
+}
+.header_top_bg{
+    position: relative;
+    height: 700px;
+    background: url(https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200) center;
+    background-size: cover;
+    margin-bottom: 40px;
+    animation: headerBg 20s infinite alternate;
+}
+@keyframes headerBg{
+/*    0%{transform: :scale(1)}*/
+/*    100%{transform: scale(1.5)}*/
+}
+.header_nav{
+    position: fixed;
+    z-index: 200;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    transition: .5s ease-in-out;
+    
+}
+.toggle_menu{
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    z-index: 500;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    right: 10px;
+    top: 0;
+}
+.toggle_menu i{
+    color: #fff;
+}
+.header_nav-open{
+    right: 0;
+    transition: .5s ease-in-out;
+}
+.nav_control{
+    margin-top: 50px;
+}
+.nav_control li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-size: .8rem;
+    border-bottom: 1px solid #a6a6a6;
+}
+.nav_control li a:hover{
+    background: #262626;
+}
+.main_text{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+}
+.main_text>h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:  'IBM Plex Serif', serif;
+}
+.main_text>p{
+    font-size: 1.2rem;
+    color: #b2b2b2;
+    font-weight: bold;
+    line-height: 30px;
+}
+.main_text .nav_down a{
+    display: inline-block;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:#65a5d3;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    transition: .5s ease-in-out;
+}
+.nav_down{
+    position: relative;
+    overflow: hidden;
+}
+
+.main_text .nav_down a i{
+    line-height: 50px;
+    animation: down 5s infinite alternate;
+}
+@keyframes down{
+    0%{
+        line-height: 50px;
+    }
+    50%{
+         line-height: 50px;
+    }
+    75%{
+         line-height: 50px;
+    }
+    90%{
+         line-height: 50px;
+    }
+    100%{
+        line-height: 70px;
+    }
+}
+.nav_down a:hover{
+    
+}
+
+.wrap_bg2{
+
+    height: 100%;
+}
+.section1{
+    margin: 50px 0;
+}
+.section1_img img{
+    width: 100%;
+    height: 300px;
+}
+.section1_info{
+    background: #fff;
+    padding: 0 40px 10px 40px;
+    box-shadow: 5px 5px 10px #adadad;
+}
+.info_top{
+    text-align: center;
+    padding: 60px 0 40px 0;
+    border-bottom: 1px solid #c4c4c4;
+    background: #fff;
+    
+}
+.info_top h2{
+    font-size: 5rem;
+    font-family:'Nanum Myeongjo', serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color:#8cddeb
+}
+.info_top address a{
+    font-family: 'Nanum Myeongjo', serif;
+    color: #a6a6a6;
+    font-size: 1rem;
+}
+.info_down p{
+    font-size: .9rem;
+    margin: 30px 0;
+/*    font-weight: bold;*/
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 25px;
+    font-size: 1rem;
+}
+.section2_bg{
+    position: relative;
+    height: 450px;
+    background: url(http://cfile8.uf.tistory.com/image/2108BA39542A3794178B66) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section_bg2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    padding: 120px 40px 90px 40px;
+}
+.section_bg2{
+}
+.section2_box{
+    position: relative;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+     text-align: center;
+    border-right: 1px solid #595858;
+    z-index: 200;
+}
+.section2_box:last-child{
+    border: 0px;
+}
+.section2-title-font{
+    text-align: center;
+    color: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2rem;
+/*    font-weight: bold;*/
+    margin-bottom: 15px;
+}
+.section2_box p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+.section2_box span a {
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 140px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+}
+.section2_box span a:hover{
+    background: #545353;
+}
+
+.section3_bg{
+    overflow: hidden;
+    margin: 70px;
+}
+.section3_box{
+    float: left;
+    width: 45%;
+    background: #fff;
+}
+.section_info{
+    padding: 0 40px 40px 40px;
+    text-align: center;
+}
+.section3_box:last-child{
+    float: right;
+}
+.section3_box img{
+    height: 200px;
+    width: 100%;
+}
+.section_info:hover h4{
+    text-shadow: 6px 5px 8px #666464;
+    transition: .5s;
+}
+.section_info h4{
+    font-size: 1.5rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    text-shadow: 4px 3px 5px #c6c4c4;
+    color: #000;
+    transition: .5s;
+}
+.section3_info_top{
+    padding: 50px 0 20px 0;
+    border-bottom: 1px solid #a6a6a6;
+}
+.section3_info_top p{
+    line-height: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: .5px;
+}
+.section3_info_bottom{
+    padding: 20px 0;
+    text-align: left;
+}
+.section3_info_bottom p{
+    font-size: 1rem;
+    line-height: 25px;
+    
+}
+.section4_box{
+    text-align: center;
+    
+}
+.section4_box h5{
+    font-size: 1.7rem;
+    color: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 20px;
+}
+.section4_box p{
+    font-size: 1rem;
+    color: rgb(153, 153, 153);
+    line-height: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.2rem;
+    
+}
+
+@media (max-width:1700px){
+    .wrap{
+        width: 90%;
+    }
+}
+@media (max-width:980px){
+    .wrap{
+        width: 90%;
+    }
+    .section3_box{
+        float: none;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .section3_bg{
+        margin: 70px 0;
+    }
+}
+@media (max-width:680px){
+    .section_bg2{
+        position: static;
+        padding:60px 40px
+    }
+    .section2_box{
+        float: none;
+        width: 100%;
+        border-right: 0px;
+        border-bottom: 1px solid #4c4b4b;
+    }
+    .section3_box:last-child{
+        margin-bottom: 0px;
+    }
+    .section2_bg{
+        height: auto;
+    }
+}
+@media (max-width:380px){
+    .header_top_bg{
+        height: 400px;
+    }
+}

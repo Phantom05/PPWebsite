@@ -1,0 +1,601 @@
+.wrapper{
+    position: relative;
+}
+.kiost_wrap{
+    width: 1270px;
+    margin: auto;
+    position: relative;
+  
+}
+.kiost_header_top_bg{
+    background-image: url(/common/img/kiost/kiost_header_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        
+}
+.kiost_header_top{
+    overflow: hidden;
+}
+.kiost_header{
+    padding: 11px 0;
+}
+.kiost_header_logo{
+    width: 33%;
+    float: left;
+}
+.kiost_header_top_nav{
+    overflow: hidden;
+    width: 33%;
+    text-align: center;
+    float: left;
+}
+
+.kiost_header_top_nav ul{
+    display: inline-block;
+}
+.kiost_header_top_nav ul li{
+    display: inline-block;
+   
+}
+.kiost_header_top_nav ul li:nth-of-type(2){
+     margin: 0 40px;
+}
+.kiost_header_top_nav ul li a{
+        font-family: '맑은 고딕';
+    float: left;
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 18px 0;
+    font-weight: 500;
+    color: #3b3b3b;
+    font-size: 22px;
+    height: 100%;
+    position: relative;
+  
+
+}
+.kiost_header_top_nav ul li a:before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #005fca;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: .3s;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+.kiost_header_top_nav ul li a:hover:before{
+    width: 100%;
+    transition: .3s;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+    
+.kiost_header_top_nav ul li span{
+    font-size: 8px;
+}
+.kiost_search_bar{
+    width: 25%;
+    float: right;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 2px 5px;
+}
+
+.kiost_header_bottom_bg{
+    background-color: #005fca;
+    overflow: hidden;
+}
+.kiost_header_bottom_home{
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    margin-top: 10px;
+}
+.kiost_header_bottom_home a img {
+    border: 1px solid #0027a2;
+    width: 25px;
+    vertical-align: middle;
+}
+.kiost_header_bottom_home span{
+    display: inline-block;
+    border: 1px solid #0027a2;
+}
+.kiost_header_bottom_home span a{
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.kiost_header_bottom_right{
+    float: right;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 10px;
+}
+.kiost_header_bottom_right span a img{
+   display: inline-block;
+    float: right;
+    margin-right: 15px;
+
+}
+.kiost_header_bottom_right_menu_bar a span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    line-height: 1;
+}
+.kiost_header_bottom_right_menu_bar{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    background-color: #004ca3;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    float: right;
+}
+.kiost_header_bottom_right .kiost_star_icon{
+    position: absolute;
+    right: 60px;
+}
+.kiost_header_bottom_right .kiost_home_link{
+    position: absolute;
+    right: 100px;
+}
+.kiost_bar_control{
+    position: relative;
+    width: 19px;
+    height: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 17px 0;
+}
+.kiost_header_bottom_right_menu_bar .kiost_bar1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.kiost_header_bottom_right_menu_bar .kiost_bar2{
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.kiost_header_bottom_right_menu_bar .kiost_bar3{
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.kiost_header_bottom_right_menu_bar a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+.kiost_header_bottom_nav{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.kiost_header_bottom_nav ul{
+    display: inline-block;
+}
+.kiost_header_bottom_nav ul li{
+    float: left;
+    border: 0 1px 0 1px solid #0027a2;
+    border-collapse: collapse;
+
+    display: inline-block;
+    
+
+}
+.kiost_header_bottom_nav ul li a{
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+     padding: 16px 38px;
+}
+
+
+/* kiost 메인 해더 끝*/
+
+
+.kiost_header_bottom_nav:hover .kiost_main_hover_menu{
+    height: 400px;
+    width: 100%;
+}
+.kiost_main_hover_menu{
+    width: 100%;
+    height: 0px;
+    background-color: darkslategray;
+}
+
+
+/* kiost 메인 호버 메뉴 끝*/
+
+.kiost_main_frame{
+    height: 724px;
+    position: relative;
+    text-align: center;
+}
+.kiost_main_frame video{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+
+}
+.kiost_main_info_control{
+    display: inline-block;
+}
+.kiost_main_frame h2{
+    font-size: 2rem;
+    color: #fff;
+    z-index: 1;
+    padding: 90px 0 50px 0;
+}
+.kiost_main_info_box{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: rgba(0,0,0,.7);
+    float: left;
+    margin: 0 15px;
+}
+.kiost_main_info_box h3{
+    position: absolute;
+    color: #fff;
+    top: 0;
+}
+.kiost_main_info_box a{
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background-image: url(/common/img/kiost/kiost_main_info_pic1.jpg);
+/*
+    background-image: url(/common/img/kiost/kiost_main_info_pic2.jpg);
+    background-image: url(/common/img/kiost/kiost_main_info_pic3.jpg);
+    background-image: url(/common/img/kiost/kiost_main_info_pic4.jpg);
+    background-image: url(/common/img/kiost/kiost_main_info_pic5.jpg);
+*/
+    background-position:-20px;
+    background-size: cover;
+    opacity: .1;
+    transition: .5s;
+    
+}
+.kiost_main_info_box a:hover{
+    opacity: 1;
+    transition: .5s;
+    background-position:20px;
+}
+
+
+/**/
+#kiost_notice_bg{
+    overflow: hidden;
+    background-color: #f1f1f5
+}
+#kiost_main_notice_control{
+    overflow: hidden;
+}
+#kiost_main_notice_control #kiost_main_notice{
+    overflow: hidden;
+    border: 1px solid red;
+    float: left;
+     width: 30%;
+}
+#kiost_main_notice_control>div:nth-child(2){
+    margin: 60px 5% 0 5%;
+}
+#kiost_main_notice{
+    margin-top: 60px;
+}
+#kiost_main_notice_top ul li{
+    float: left;
+   width: 35px;
+}
+#kiost_main_notice_top ul li a{
+    display: block;
+    font-size: .9rem;
+    font-weight: bold;
+}
+#kiost_main_notice_top ul li:first-child{
+    margin-left: 40px;
+    width: 50px;
+}
+#kiost_main_notice_top{
+    overflow: hidden;
+    padding: 10px 0;
+}
+#kiost_main_notice_top>.kiost_main_notice_sub{
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: left;
+}
+.kiost_notice_plus{
+    display: inline-block;
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    float: right;
+}
+#kiost_main_notice_top>ul>li:first-child a{
+    color: #0051a9;
+}
+#kiost_main_notice_middle>ul>li>span,#kiost_main_notice_middle>ul>li>p{
+    float: left;
+}
+#kiost_main_notice_middle ul li a{
+    display: block;
+    padding: 12px 0;
+}
+#kiost_main_notice_middle ul li{
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    
+}
+#kiost_main_notice_middle>ul>li p a,#kiost_main_notice_middle>ul>li .kiost_main_notice_date a{
+    font-size: .75rem;
+    font-weight: 600;
+    color: gray;
+}
+#kiost_main_notice_middle .kiost_main_notice_inner_notice a{
+    color: #3378c1;
+    font-weight: bold;
+    padding-right: 10px;
+}
+#kiost_main_notice_middle .kiost_main_notice_date{
+    float: right;
+}
+
+#kiost_main_notice_bottom{
+    margin-top: 40px;
+    position: relative;
+    padding: 70px 0;
+}
+.kiost_main_notice_bottom_pic_control img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+#kiost_main_notice_bottom{
+    text-align: center;
+    background-color: #fff;
+}
+#kiost_main_notice_bottom span{
+    display: inline-block;
+    border: 1px solid gray;
+    width: 80px;
+    height: 30px;
+    font-size: .8rem;
+    line-height: 25px;
+    margin-top: 10px;
+}
+#kiost_main_notice_bottom h5{
+    font-size: 1rem;
+    color: #0051a9;
+    font-weight: bold;
+    margin-top: 40px;
+}
+#kiost_main_notice_bottom p {
+    margin:  10px 0;
+}
+#kiost_main_notice_top img{
+    height: 220px;
+    width: 100%;
+}
+#kiost_main_notice1 #kiost_main_motice1_left, #kiost_main_notice1 #kiost_main_motice1_right{
+    border: 1px solid blue;
+    float: left;
+}
+#kiost_main_notice1{
+    overflow: hidden;
+    margin: 40px 0;
+}
+#kiost_main_motice1_left ul li{
+    float: left;
+    width: 275px;
+    border: 1px solid red;
+}
+#kiost_main_motice1_right{
+    margin-left: 60px;
+}
+#kiost_main_motice1_right ul li{
+    float: left;
+    width: 127px;
+    text-align: center;
+}
+#kiost_main_motice1_left ul li span{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 10px;
+}
+#kiost_main_motice1_left ul li a{
+    display: block;
+    padding: 10px 0;
+}
+#kiost_main_second{
+    overflow: hidden;
+}
+#kiost_main_second1{
+    float: left;
+    overflow: hidden;
+    width: 65%;
+    border: 1px solid blue;
+}
+#kiost_main_second1_top{
+    border: 1px solid red;
+    overflow: hidden;
+}
+#kiost_main_second1_top ul li{
+    float: right;
+}
+#kiost_main_second1_top span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    float: left;
+}
+
+
+#kiost_main_second1_bottom{
+    overflow: hidden;
+    padding: 20px 0;
+
+}
+#kiost_main_second1_bottom ul li p strong{
+    font-size: .8rem;
+    color: #3378c1;
+}
+#kiost_main_second1_bottom ul li{
+    margin-left: 50px;
+    line-height: 18px;
+}
+#kiost_main_second1_bottom ul li:nth-child(2){
+    margin: 35px 0 35px 50px;
+}
+#kiost_main_second1_bottom ul li:hover a{
+    text-decoration: underline black;
+
+}
+#kiost_main_second1_bottom:before{
+    content: '';
+    float: left;
+    display: block;
+    width: 4px;
+    height: 190px;
+    background:#e5e5e9 ;
+    margin-left: 16px;
+}
+#kiost_main_second1_bottom ul li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 4px;
+    width: 31px;
+    height: 31px;
+    background: url('http://www.kiost.ac.kr//images/kor/main/bg_snsf.png');
+}
+#kiost_main_second1_bottom ul li:before:nth-child(2){
+    margin: 15px 0;
+}
+#kiost_main_second1_bottom span{
+    float: right;
+}
+#kiost_main_second2_bottom{
+    overflow: hidden;
+    padding: 20px 0 0 0;
+
+}
+
+#kiost_main_second2{
+    float: right;
+    width: 30%;
+    border: 1px solid orange;
+    overflow: hidden;
+    position: relative;
+}
+#kiost_main_second2_top span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#kiost_main_second2_bottom:before{
+    content: '';
+    float: left;
+    display: block;
+    width: 4px;
+    height: 190px;
+    background:#e5e5e9 ;
+    margin-left: 16px;
+}
+#kiost_main_second2_bottom ul li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 4px;
+    width: 31px;
+    height: 31px;
+    background: url('http://www.kiost.ac.kr/images/kor/main/bg_snsy.png');
+}
+#kiost_main_second2_bottom ul li{
+    margin-bottom: 90px;
+    margin-left: 50px;
+}   
+#kiost_main_second2_bottom ul li a{
+    font-size: .9rem;
+    padding-top: 10px;
+}
+#kiost_main_second2_bottom ul li img{
+    width: 121px;
+    height: 68px;
+    float: right;
+}
+
+
+#kiost_slide_bg{
+background:url('http://www.kiost.ac.kr/images/kor/main/bg_newsletter_1280.png');
+    background: url('http://www.kiost.ac.kr//images/kor/main/bg_mnewsletter.png') repeat;
+    height: 500px;
+}
+
+
+
+/**/
+#kiost_footer_bg{
+    background: #08112a;
+}
+#kiost_footer_control{
+    padding: 40px 0;
+    overflow: hidden;
+}
+#kiost_footer_left{
+    width: 40%;
+    float: left;
+    border: 1px solid orange;
+}
+#kiost_footer_left address{
+    color: #97989e;
+    font-size: .8rem;
+    line-height: 18px;
+}
+#kiost_footer_left ul li a{
+    float: left;
+    margin: 0 15px 20px 0;
+    color: #97989e;
+}
+#kiost_footer_left ul{
+    overflow: hidden;
+}
+#kiost_footer_left ul li:first-child a{
+    color: yellow;
+}
+#kiost_footer_middle{
+    width: 30%;
+    float: right;
+    border: 1px solid white;
+}
+#kiost_footer_middle ul li img{
+    float: left;
+    margin: 4px;
+}
+
+
+
+
+

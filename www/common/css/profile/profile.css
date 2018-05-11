@@ -1,0 +1,153 @@
+.about-text {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.about-name {
+    font-family: sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: #222;
+    margin-bottom: .3em;
+}
+
+.about-name span {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.info-text {
+    font-weight: 200;
+    color: #525252;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+.content ul li , .content ul li a{
+    font-size: .9rem;
+    padding: 2px;
+}
+.content ul li{
+    padding-left: 15px;
+}
+.fl {
+    float: left;
+    margin: 20px;
+}
+.fr {
+    float: right;
+    margin: 20px;
+}
+
+.hero {
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    background: url(http://i.dailymail.co.uk/i/pix/2014/03/31/article-2593424-1CB8A3B300000578-939_634x627.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .active {
+    background: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.hero .active:before,
+.hero .active:after {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    top: 0;
+}
+
+.hero .active:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.hero .active:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+.hero .logo {
+    color: white;
+    font-family: 'Over the Rainbow';
+    font-size: 1.9em;
+    margin: 0 0 0 85px;
+    line-height: 2;
+    width: 30%;
+    float: left;
+}
+.content {
+    position: relative;
+    width: 60%;
+    min-height: 100%;
+    margin-left: 40%;
+    padding: 10em 2em;
+    overflow: hidden;
+}
+.content-bg{
+    position: absolute;
+    white-space: nowrap;
+    cursor: default;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ececec;
+    z-index: -1;
+    top: -1rem;
+    font-size: 10rem;
+    left: -100rem;
+    letter-spacing: -18px;
+    -webkit-animation: bgText 1s forwards ease;
+            animation: bgText 1s forwards ease;
+}
+@-webkit-keyframes bgText{
+    0%{ left: -100rem;}
+    100%{left: 1rem;}
+}
+@keyframes bgText{
+    0%{ left: -100rem;}
+    100%{left: 1rem;}
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    .hero {
+        height: 350px;
+        width: 100%;
+        display: block;
+        position: relative;
+        padding: 1px;
+    }
+    .hero nav {
+        font-size: 1.7em;
+    }
+    .content {
+        margin-left: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+    .about-name, .about-name span{
+        margin-top: 10px
+    }
+}
+
+@media (max-width: 480px) {
+    img.fl,
+    img.fr {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+    }
+}

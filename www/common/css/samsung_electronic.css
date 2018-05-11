@@ -1,0 +1,2070 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif !important;
+}
+a{
+    text-decoration-line: none;
+}
+.wrap{
+    margin: auto;
+    padding: 0;
+    width: 1600px;
+}
+.background_wrap{
+    background-color: #f3f5f6;
+/*    height: 700px;*/
+    margin: 2rem 0 ;
+    padding: 1rem;
+    width: 100%;
+}
+.background_wrap:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+/* 삼성 해더 네비 시작 */
+/* 삼성 해더 네비 시작 */
+.samsung_header{
+    height: 125px;
+    width: 100%;
+}
+.samsung_nav_background{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.samsung_top_nav{
+    padding-top: 1.1rem;
+}
+.samsung_top_nav_right{
+    float: right;
+    margin-right: 10px;
+}
+.samsung_top_nav_right li{
+   float: left;
+    margin-right: 7px;
+}
+.samsung_top_nav_right li:hover{
+    text-decoration: underline;
+}
+.samsung_top_nav_right_icon1 a{
+    color:deepskyblue;
+    font-weight: 600;
+}
+.samsung_top_nav_right_icon2 a{
+    color:darkorange;
+    font-weight: 600;
+}
+.samsung_top_nav_right_second a{
+     font-weight: 500;   
+}
+.icono-user{
+    width: 5px;
+}
+.samsung_main{
+    padding-top: 7.8rem;
+}
+.samsung_main_nav{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 3rem;
+}
+.samsung_main_nav:after {display:block; content:""; clear:both}
+.samsung_main_nav_inner{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.samsung_main_nav_inner li a{
+    float: left;
+    text-align: center;
+    width: 18%;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #000;
+}
+.samsung_main_nav_inner li a:hover .samsung_main_nav_inner li a, :link, samsung_main_nav_inner li a:visited{
+    text-decoration: underline;
+    color: #000;
+}
+samsung_main_nav_inner ul il a{
+    color: black;
+}
+.samsung_search_bar{
+    position: absolute;
+    float: right;
+    right: -70px;
+    top: 0px;
+}
+.samsung_search_bar input{
+    border: 1px solid #ececec;
+    height: 30px;
+    width: 200px;
+}
+.samsung_input_search_bar input[text]{
+
+}
+
+/* 삼성 해더 네비 끝 */
+/* 삼성 해더 네비 끝 */
+
+
+
+/* 삼성 해더 모바일 네비 시작 */
+/* 삼성 해더 모바일 네비 시작 */
+.samsung_mobile_menu img{
+/*    width: 40px;  */
+    float: left;
+    width: 10px;
+    margin: 0 10px 0 15px;
+}
+.samsung_mobile_menu_right a img{
+    float: right;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+
+
+/* 삼성 해더 모바일 네비 끝 */
+/* 삼성 해더 모바일 네비 끝 */
+
+
+/* 삼성 메인 슬라이드 시작 */
+/* 삼성 메인 슬라이드 시작 */
+.samsung_slide_talk{
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 13%;
+    width: 100%;
+}
+.samsung_slide_title{
+    display:  inline-block;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 6px 6px #4e4f53;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+.samsung_slide_title_addr{
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 6px 6px #4e4f53;
+    letter-spacing: -2px;
+    margin-left: 8px;
+}
+.samsung_slide_talk .samsung_slide_surve{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 26px;
+    line-height: 30px;
+    color: white;
+        word-break: keep-all;
+}
+
+.samsung_slide_nav{
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+
+}
+.samsung_slide_nav img{
+    width: 6.5px !important;
+    margin-right: 7px;
+
+}
+.samsung_slide_product_pic{
+    position: absolute;
+    width: 100%;
+    bottom: -2%;
+
+
+
+}
+.samsung_slide_nav:hover{
+    text-decoration: underline;
+}
+
+#samsung_slide{
+   position: relative;overflow: hidden;
+}
+
+#samsung_slide ul{width: 500%;height: 100%; transition: 1s; }
+#samsung_slide ul:after{display: block;content: "";clear: both;}
+#samsung_slide li{float: left;height: 100%; width: 20%; }
+
+/*
+#samsung_slide li:nth-child(1){background-image: url(/common/img/samsung/samsung_slide_pic1.jpg)}
+#samsung_slide li:nth-child(2){background-image: url(/common/img/samsung/samsung_slide_pic2.jpg)}
+#samsung_slide li:nth-child(3){background-image: url(/common/img/samsung/samsung_slide_pic3.jpg)}
+#samsung_slide li:nth-child(4){background-image: url(/common/img/samsung/samsung_slide_pic4.jpg)}
+*/
+
+#samsung_slide li img {width:100%; vertical-align: middle;}
+#samsung_slide input{display: none;}
+
+#samsung_slide label{
+    width: 25px;height: 25px;display: inline-block;border: 3px solid #a5a5a5;cursor: pointer;border-radius: 50%;
+    vertical-align: middle; transition:.3s;
+}
+
+#samsung_slide .pos{
+    position: absolute; bottom: 60px;width: 100%; text-align: center;
+    
+}
+#samsung_slide .pos label{
+    margin-left: 10px;
+}
+
+/*
+#pos1:checked~ul > li:nth-child(1) {margin-left:0;}
+#pos1:checked~ul > li:nth-child(2) {margin-left:0;}
+#pos1:checked~ul > li:nth-child(3) {margin-left:0;}
+#pos1:checked~ul > li:nth-child(4) {margin-left:0;}
+#pos1:checked~ul > li:nth-child(5) {margin-left:0;}
+
+#pos2:checked~ul > li:nth-child(1) {margin-left:-100%;}
+
+#pos3:checked~ul > li:nth-child(1) {margin-left:-100%;}
+#pos3:checked~ul > li:nth-child(2) {margin-left:-100%;}
+
+#pos4:checked~ul > li:nth-child(1) {margin-left:-100%;}
+#pos4:checked~ul > li:nth-child(2) {margin-left:-100%;}
+#pos4:checked~ul > li:nth-child(3) {margin-left:-100%;}
+
+#pos5:checked~ul > li:nth-child(1) {margin-left:-100%;}
+#pos5:checked~ul > li:nth-child(2) {margin-left:-100%;}
+#pos5:checked~ul > li:nth-child(3) {margin-left:-100%;}
+#pos5:checked~ul > li:nth-child(4) {margin-left:-100%;}
+
+
+#samsung_slide li { transition: 3s; }
+*/
+
+
+
+#pos1:checked~.pos>label:nth-child(1){background-color: red;}
+#pos2:checked~.pos>label:nth-child(2){background-color: red;}
+#pos3:checked~.pos>label:nth-child(3){background-color: red;}
+#pos4:checked~.pos>label:nth-child(4){background-color: red;}
+#pos5:checked~.pos>label:nth-child(5){background-color: red;}
+
+#pos1:checked~ul{margin-left:0%;}
+#pos2:checked~ul{margin-left:-100%;}
+#pos3:checked~ul{margin-left:-200%;}
+#pos4:checked~ul{margin-left:-300%;}
+#pos5:checked~ul{margin-left:-400%;}
+
+/* 삼성 메인 슬라이드 끝 */
+/* 삼성 메인 슬라이드 끝 */
+
+
+
+/* 삼성 메인 모바일 슬라이드 시작*/
+
+.samsung_slide_ipad_product_pic{
+    position: absolute;
+    width: 50%;
+    bottom: -2%;
+    margin-left: 50%;
+}
+
+
+#samsung_mobile_slide{
+   position: relative;overflow: hidden;
+}
+
+#samsung_slide ul{width: 500%;height: 100%; transition: 1s; }
+#samsung_slide ul:after{display: block;content: "";clear: both;}
+#samsung_slide li{float: left;height: 100%; width: 20%; }
+
+
+#samsung_slide li img {width:100%;}
+#samsung_slide input{display: none;}
+
+#samsung_slide label{
+    width: 25px;height: 25px;display: inline-block;border: 3px solid #a5a5a5;cursor: pointer;border-radius: 50%;
+    vertical-align: middle; transition:.3s;
+}
+
+#samsung_slide .mobile_pos{
+    position: absolute; bottom: 60px;width: 100%; text-align: center;
+}
+#samsung_slide .mobile_pos label{
+    margin-left: 10px;
+}
+
+#mobile_pos1:checked~.mobile_pos>label:nth-child(1){background-color: red;}
+#mobile_pos2:checked~.mobile_pos>label:nth-child(2){background-color: red;}
+#mobile_pos3:checked~.mobile_pos>label:nth-child(3){background-color: red;}
+#mobile_pos4:checked~.mobile_pos>label:nth-child(4){background-color: red;}
+#mobile_pos5:checked~.mobile_pos>label:nth-child(5){background-color: red;}
+
+#mobile_pos1:checked~ul{margin-left:0%;}
+#mobile_pos2:checked~ul{margin-left:-100%;}
+#mobile_pos3:checked~ul{margin-left:-200%;}
+#mobile_pos4:checked~ul{margin-left:-300%;}
+#mobile_pos5:checked~ul{margin-left:-400%;}
+
+/*삼성 메인 아이패드 슬라이드 끝*/
+
+
+/* 삼성 메인 시작 */
+/* 삼성 메인 시작 */
+.samsung_main{
+    width: 100%;
+}
+.samsung_main:after {display:block; content:""; clear:both}
+.samsung_main_pic1{
+    width: 54.7%;
+    float: left;
+/*    position: relative;*/
+}
+.samsung_main_pic1_arrow{
+/*    position: absolute;*/
+    z-index: 2;
+    top: 40%;
+}
+.samsung_main_left_arrow{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+}
+.samsung_main_right_arrow{
+    float: left;;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+.samsung_main_pic2{
+    width: 45.3%;
+    float: left;
+    position: relative;
+}
+.samsung_main_pic_background{
+    width: 100%;
+/*    position: relative;*/
+}
+
+.samsung_main_pic_inner{
+    width: 100%;
+}
+.samsung_main_pic_inner img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.samsung_main_navi{
+    width: 50.65%;
+    float: left;
+    text-align: center;
+    
+}
+.samsung_main_navi img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main_navi li{
+    width: 100%;
+    position: relative;
+}
+.samsung_main_navi_ineer1{
+    position: absolute;
+    top:30%;
+    left: 27%;
+}
+.samsung_main_navi_ineer1 img{
+    width: 100%;
+    height: 100%;
+}
+.samsung_main_navi_ineer1 h3{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.samsung_main_navi_ineer1 span{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.samsung_main_navi_ineer2{
+    position: absolute;
+    top:30%;
+    left: 22%;
+}
+.samsung_main_navi_ineer2 img{
+    width: 100%;
+    height: 100%;
+}
+.samsung_main_navi_ineer2 h3{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.samsung_main_navi_ineer2 span{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+.samsung_main_navi_ineer3{
+    position: absolute;
+    top:30%;
+    left: 18%;
+}
+.samsung_main_navi_ineer3 img{
+    width: 100%;
+    height: 100%;
+}
+.samsung_main_navi_ineer3 h3{
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.samsung_main_navi_ineer3 span{
+    text-align: left;
+    color: #fff;
+    font-size: .9rem;
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.samsung_main_navi a img{
+    width: 100%;
+}
+.samsung_main_navi .samsung_news_letters{
+    position: absolute;
+    width: 50%;
+   bottom: 0;
+    right: 0;
+}
+
+.samsung_news_letters img{
+    width: 100%;
+    height: 100%;
+    margin-left: 1.3%;
+}
+
+.samsung_main_news{
+    width: 49%;
+    float: left;
+}
+.samsung_main_news h2{
+    border-bottom: 2px solid red;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 1rem 0;
+    width: 100%;
+}
+.samsung_main_news_top{
+    position: relative;
+    border-top: 1px solid #ececec;
+    width: 100%;
+    float: left;
+    padding: 0 1rem 2rem 2rem;
+}
+
+.samsung_main_news_title{
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: 90%;
+    overflow: hidden;
+     white-space: nowrap;
+}
+.samsung_main_news_article{
+    font-size: .9rem;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50%;
+
+}
+.samsung_main_news1 p{
+    margin-left: 20px;
+    width: 100%;
+    word-break: keep-all;
+    display: inline-block;
+    color: #000;
+}
+.samsung_main_news1 span{
+    float: right;
+    font-weight: bold;
+    color: #767676;
+}
+.samsung_main_news1 a img{
+    float: left;
+    width: 6px;
+    margin-right: 5px;
+}
+
+.samsung_main_news1{
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0;
+    width: 90%;
+    word-break: keep-all;
+    height: 170px;
+}
+
+.samsung_main_news1 a:hover{
+    text-decoration-line: underline;
+}
+
+
+.samsung_main_bridge1{
+    text-align: center;
+    background-image: url(/common/img/samsung/samsung_bridge_border.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+.samsung_main_bridge1 h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0 3rem 0;
+    padding: 15px 0;
+}
+
+
+/* 삼성 모바일 뉴스 시작 */
+/* 삼성 모바일 뉴스 시작 */
+
+.samsung_mobile_news{
+    overflow: hidden;
+    padding: 50px 15px 20px 20px;
+    margin-bottom: 30px;
+}
+.samsung_mobile_news_main h2{
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.samsung_mobile_news ul li{
+/*    border: 1px solid;*/
+    width: 31%;
+    float: left;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 2px solid red;
+
+    
+}
+.samsung_mobile_news ul li:last-child{
+    margin-left: 30px;
+}
+
+.samsung_mobile_news img{
+    display: inline;
+    margin-right: 5px;
+}
+.samsung_mobile_news_title{
+    display: inline-block;
+    padding:20px 0 20px 5px;
+    font-size: 1.2rem;
+    line-height: 27px;
+    height: 90px;
+/*    border: 1px solid red;*/
+}
+.samsung_mobile_news_article{
+    font-size: 1rem;
+    margin-left: 10px;
+    height: 37.5px;
+/*    border: 1px solid red;*/
+    overflow: hidden;
+     text-overflow:ellipsis;
+
+}
+.samsung_mobile_news li span{
+    display:block;
+    margin: 15px;
+    float: right;
+    font-weight: 500;
+    color: #767676;
+    
+}
+
+
+/* 삼성 모바일 뉴스 끝 */
+/* 삼성 모바일 뉴스 끝 */
+
+
+
+/* 삼성 메인 끝 */
+/* 삼성 메인 끝 */
+
+
+/* 삼성 메인 아이패드 시작*/
+/* 삼성 메인 아이패드 시작*/
+
+.samsung_main_pic_bakground_ipad_control{
+    position: relative;
+}
+.samsung_main_pic_background_ipad{
+/*    position: relative;*/
+    display: none;
+    width: 100%;
+    
+}
+.samsung_main_background_ipad_pic0{
+    display: none;
+/*    height: 300px;*/
+/*    border: 3px solid red;*/
+} 
+.samsung_main_ipad_pic_inner img{
+    display: none;
+    width:450px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+/* 삼성 메인 아이패드 끝 */
+/* 삼성 메인 아이패드 끝 */
+
+
+/* 삼성 메인2 사진정보 시작*/
+/* 삼성 메인2 사진정보 시작*/
+.samsung_main2 div{
+/*    padding: 10px;*/
+}
+.samsung_main2_pic1{
+    width: 54%;
+    float: left;
+}
+.samsung_main2_pic2{
+    width: 45%;
+    float: left;
+    padding-left: 1.2%;
+}
+.samsung_main2_title{
+    width: 50%;
+    float: left;
+    padding-top: 20%;
+}
+.samsung_main2_title_top{
+    margin-bottom: 3rem;
+}
+.samsung_main2_title_top h2 a{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    letter-spacing: -1px;
+    color: #000;
+}
+.samsung_main2_title_top h2 a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.samsung_main2_title_top h2{
+    margin-left: 20px;
+}
+.samsung_main2_title_bottom ul{
+    margin-left: 20px;
+}
+.samsung_main2_inner_pic_left{
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.samsung_main2_inner_pic_left img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main2_inner_pic_left_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 65%;
+}
+.samsung_main2_pic_right_top{
+    position: relative;
+    z-index: 1;
+    float: left;
+    text-align: center;
+    margin-bottom: 3.5%;
+}
+.samsung_main2_pic_right_top_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 20%;
+}
+.samsung_main2_title_bottom li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: #000;
+}
+.samsung_main2_title_bottom li a:hover{
+    text-decoration: underline; 
+    color: black;
+}
+.samsung_main2_pic_right_top img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main2_pic_right_botoom{
+    float: left;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    text-align: center;
+}
+.samsung_main2_pic_right_botoom_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 20%;
+}
+.samsung_main2_pic_right_botoom img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_hover_black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    z-index: 2;
+    display: none;
+    vertical-align: middle;
+}
+.samsung_main2_inner_pic_left:hover .samsung_hover_black{
+    display: block;  
+    transition: 2s;
+}
+.samsung_main2_pic_right_top:hover .samsung_hover_black{
+    display: block;  
+}
+.samsung_main2_pic_right_botoom:hover .samsung_hover_black{
+    display: block;  
+}
+.samsung_main_second_pic1_type1:hover .samsung_hover_black{
+    display: block;  
+}
+
+.samsung_main2_second_pic1{
+    width: 70%;
+    float: left;
+}
+.samsung_main_second_pic1_type1{
+    position: relative;
+    float: left;
+    width: 37%;
+    z-index: 1;
+    text-align: center;
+}
+.samsung_main_second_pic1_type1_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 65%;
+}
+.samsung_main_second_pic1_type1 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main_second_pic1_type2{
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    float: left;
+    width: 60%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    text-align: center;
+}
+.samsung_main_second_pic1_type2_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 20%;
+}
+.samsung_main_second_pic1_type2 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main_second_pic1_type3 {
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+    text-align: center;
+}
+.samsung_main_second_pic1_type3_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 20%;
+}
+.samsung_main_second_pic1_type3 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main2_second_pic2{
+    float: left;
+    width: 30%;
+    padding-left: 5rem;
+}
+.samsung_main2_three_bottom li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: #000;
+}
+.samsung_main2_three_bottom li span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.samsung_main2_three_top h2{
+    margin-left: 20px;
+}
+.samsung_main2_three_bottom ul{
+    margin-left: 20px;
+}
+.samsung_main2_second_top{
+    padding-top: 45%;
+    margin-bottom: 3rem;
+}
+.samsung_main2_second_top a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.samsung_main2_second_top h2 a{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000;
+}
+.samsung_main2_second_bottom li a{
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #000;
+}
+.samsung_main2_second_bottom li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.samsung_main_second_pic1_type1:hover samsung_hover_black{
+    display: block;
+}
+.samsung_main_second_pic1_type2:hover .samsung_hover_black{
+    display: block;  
+}
+.samsung_main_second_pic1_type3:hover .samsung_hover_black{
+    display: block;  
+}
+
+.samsung_main2_three_pic1{
+    width: 30%;
+    float: left;
+}
+.samsung_main2_three_pic2{
+    width: 70%;
+    float: left;
+}
+.samsung_main2_three_top{
+    padding-top: 30%;
+    margin-bottom: 2.5rem;
+}
+.samsung_main2_three_top h2 a{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000;
+}
+.samsung_main2_three_top ul a li{
+    font-size: 2rem;
+}
+.samsung_main2_three_top a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.samsung_main2_three_bottom li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+samsung_main2_three_bottom li a{
+    color: #000;
+}
+.samsung_main2_three_type1{
+    position: relative;
+    float: left;
+    width: 37%;
+    z-index: 1;
+    text-align: center;
+}
+.samsung_main2_three_type1_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 65%;
+}
+.samsung_main2_three_type2{
+    position: relative;
+    float: left;
+    width: 60%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    z-index: 2;
+    text-align: center
+}
+.samsung_main2_three_type2_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 20%;
+}
+.samsung_main2_three_type3{
+    position: relative;
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+    z-index: 2;
+    text-align: center
+}
+.samsung_main2_three_type3_p{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-top: 20%;
+}
+.samsung_main2_three_type1 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main2_three_type2 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main2_three_type3 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.samsung_main2_three_type1:hover .samsung_hover_black{
+    display: block;
+}
+.samsung_main2_three_type2:hover .samsung_hover_black{
+    display: block;
+}
+.samsung_main2_three_type3:hover .samsung_hover_black{
+    display: block;
+}
+/* 삼성 메인2 사진정보 끝*/
+/* 삼성 메인2 사진정보 끝*/
+
+
+
+/* 삼성 메인 모바일 시작 */
+/* 삼성 메인 모바일 시작 */
+
+.samsung_mobile_navi_control a img{
+    float: right;
+    padding-top: 25px;
+}
+.samsung_mobile_navi{
+    overflow: hidden;
+}
+.samsung_mobile_navi_box{
+    overflow: hidden;
+}
+.samsung_mobile_navi_con1{
+    float: left;
+    width: 50%;
+    background-color: #baaf05;
+}
+.samsung_mobile_navi_con2{
+    float: left;
+    width: 50%;
+    background-color: #8cb335;
+}
+.samsung_mobile_navi_con3{
+    float: left;
+    width: 50%;
+    background-color: #2577e0;
+}
+.samsung_mobile_navi_con4{
+    float: left;
+    width: 50%;
+    background-color: #1388ad;
+}
+.samsung_mobile_navi_title h3{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    padding: 15px 0 3px 0;
+}
+.samsung_mobile_navi_title span{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    padding:10px 0 0 0;
+}
+.samsung_mobile_navi_title{
+    text-align: center;
+}
+.samsung_mobile_navi_title p{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    padding:25px 0 0 0;
+}
+.samsung_mobile_navi_title h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding:25px 0 0 0;
+}
+.samsung_mobile_navi_control ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 삼성 메인 모바일 끝 */
+/* 삼성 메인 모바일 끝 */
+
+
+/* 삼성 메인2 아이패드 시작 끝*/
+/* 삼성 메인2 아이패드 시작 끝*/
+.samsung_main2_ipad_pic_control{
+    width: 100%;
+    display: none;
+    overflow: hidden;
+}
+.samsung_main2_ipad_pic_control a{
+    display: block;
+    width: 32%;
+    float: left;
+    margin-right:2%;
+    position: relative;
+    }
+.samsung_main2_ipad_pic_control a:last-child{
+    margin-right: 0;
+}
+.samsung_main2_ipad_pic_control a img{width: 100%;}
+.samsung_main2_ipad_pic_control a span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 3%;
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #fff;
+    background: #000;
+    opacity: 0.8;
+    text-align: center;
+    }
+
+
+/* 삼성 메인2 아이패드  끝*/
+/* 삼성 메인2 아이패드  끝*/
+
+
+/* 삼성 컴퍼니정보 시작 */
+/* 삼성 컴퍼니정보 시작 */
+.samsung_company_info{
+    overflow: hidden;
+    width: 100%;
+/*    position: relative;*/
+}
+/*.samsung_company_info_type1:hover a{text-decoration:underline;}*/
+/*[class*='samsung_company_info_type']:hover > a:first-child dt{text-decoration:underline}*/
+
+.samsung_company_info_type1:hover dt{text-decoration:underline}
+.samsung_company_info_type2:hover dt{text-decoration:underline}
+.samsung_company_info_type3:hover dt{text-decoration:underline}
+.samsung_company_pic4_4:hover dt{text-decoration:underline}
+.samsung_company_pic5_5:hover dt{text-decoration:underline}
+
+
+
+.samsung_company_info1{
+     overflow: hidden;
+}
+.samsung_company_info1 img{
+    vertical-align: middle;
+      width: 100%;
+}
+.samsung_company_info2{
+    overflow: hidden;
+}
+.samsung_company_info2 img{
+    vertical-align: middle;
+    width: 100%;
+}
+.samsung_company_icon{
+    position: absolute;
+    width: 35%;
+    bottom: 70px;
+    right: 40px;
+}
+.samsung_company_plus_icon img{
+    margin-left: 20px;
+    width: 25px;
+    position: absolute;
+    left: 98%;
+    top: 25%;
+}
+.samsung_company_info_type1{
+    float: left;
+    width: 50%;
+/*    background-color: #00939a;*/
+    position: relative;
+}
+/*
+.samsung_company_info [class *='samsung_company_pic'] 
+dt:hover{text-decoration:underline}
+*/
+
+.samsung_company_pic1_1{
+    width: 50%;
+    float: left;
+    background-color: #00939a;
+    padding: 30px 10px 0 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.samsung_company_info_type_pic1{
+    width: 50%;
+    float: right;
+}
+.samsung_company_pic1_1 dt{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+
+.samsung_company_info_type2{
+    float: left;
+    width: 50%;
+/*    background-color: #a1c43b;*/
+    position: relative;
+}
+.samsung_company_pic2_2{
+    width: 50%;
+    float: left;
+    padding: 30px 10px 0 40px;
+    position: absolute;
+    background-color: #a1c43b;
+    top: 0;
+    bottom: 0;
+}
+.samsung_company_info_type_pic2{
+    width: 50%;
+    float: right;
+}
+.samsung_company_pic2_2 dt{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+.samsung_company_info_type3{
+    width: 50%;
+    float: left;
+/*    background-color: #cdc400;*/
+    position: relative;
+}
+.samsung_company_pic3{
+    float: left;
+    width: 50%;
+}
+.samsung_company_pic3_3{
+    float: left;
+    width: 50%;
+    position: absolute;
+    background-color: #cdc400;
+    padding: 30px 10px 0 40px;
+    top:0;
+    bottom: 0;
+    right: 0;
+}
+.samsung_company_pic3_3 dt{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+
+.samsung_company_info_type4{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.samsung_company_pic4_4{
+    padding: 30px 10px 0 40px;
+    padding: 25%;
+    width: 50%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #8a9a9a;
+}
+.samsung_company_pic4_4 dt{
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 900;
+    color: #fff;
+    top: 30px;
+    left: 42px;
+}
+.samsung_company_pic4_4:hover{
+    text-decoration: underline;
+}
+
+.samsung_company_pic5_5{
+    padding: 30px 10px 0 40px;
+    padding: 24.5%;
+    width: 50%;
+    position: absolute;
+    background-color: #5587a2;
+    right: 0;
+    top: 0;
+}
+.samsung_company_pic5_5 dt{
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 900;
+    color: #fff;
+    top: 30px;
+    left: 42px;
+}
+.samsung_company_icon1{
+    position: absolute;
+    top: 47%;
+    width: 35%;
+}
+.samsung_company_plus_icon1 img{
+    margin-left: 20px;
+    width: 25px;
+    position: absolute;
+    top: 20%;
+    left: 100%;
+}
+
+/* 삼성 컴퍼니정보 끝 */
+/* 삼성 컴퍼니정보 끝 */
+
+
+/* 삼성 컴퍼니 휴대폰 ui시작 */
+/* 삼성 컴퍼니 휴대폰 ui시작 */
+
+.samsung_company_mobile_control{
+    overflow: hidden;
+
+}
+
+.samsung_company_mobile_box_control img{
+    width: 10%;
+    float: right;
+    margin:2% 5% 2% 0;
+}
+.samsung_company_mobile_box1{
+    overflow: hidden;
+    background-color: #00939a;
+}
+.samsung_company_mobile_control a:hover .samsung_company_title{
+    text-decoration: underline;
+}
+.samsung_company_mobile_box2{
+    overflow: hidden;
+    background-color: #a1c43b;
+}
+.samsung_company_mobile_box3{
+    background-color:#cdc400;
+    overflow: hidden;
+}
+.samsung_company_mobile_box4{
+    background-color:#8a9a9a;
+    overflow: hidden;
+}
+.samsung_company_mobile_box5{
+    background-color:#5587a2;
+    overflow: hidden;
+}
+.samsung_company_title{
+    float: left;
+    padding: 3% 3% 3% 5%;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 삼성 컴퍼니 휴대폰 ui 끝 */
+/* 삼성 컴퍼니 휴대폰 ui 끝 */
+
+
+/* 삼성 푸터 시작*/
+/* 삼성 푸터 시작*/
+.samsung_footer{
+    background-color: #494a4d;;
+    margin: 45px auto 0 auto;
+    overflow: hidden;
+}
+.samsung_footer_part1{
+    float: left;
+    width: 25%;
+    padding-left: 45px;
+    border-right: 1px solid #6a6b6f;
+    overflow: hidden;
+    height: 1100px;
+}
+.samsung_footer_part1 h3 a, .samsung_footer_part1 h4 a, .samsung_footer_part1 li a, .samsung_footer_part1 h5 a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.samsung_footer_part1 h3 a:hover, .samsung_footer_part1 h4 a:hover, .samsung_footer_part1 li a:hover, .samsung_footer_part1 h5 a:hover{
+    text-decoration: underline;
+}
+.samsung_footer_control h3 a{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.samsung_footer_control h4 a{
+    font-size: 1.4rem;
+    font-weight: 900;  
+}
+.samsung_footer_control h5 a{
+    font-size: 1.0rem;
+    font-weight: 900; 
+    padding-top: 0;
+}
+.samsung_footer_control{
+    width: 1400px;
+    margin: auto;
+    margin: 45px auto 50px auto;
+    overflow: hidden;
+}
+.samsung_footer h3{
+    padding-bottom: 20px;
+}
+.samsung_footer h4{
+    padding: 15px 0;
+}
+/*
+.samsung_footer .samsung_footer_sitemap_exept{
+    padding-bottom: 5px;
+}
+*/
+.samsung_footer h5{
+    padding: 0 0 15px 0;
+}
+.samsung_footer li{
+    font-size: 1rem;
+    padding: 5px 0;
+}
+.samsung_footer_sitemap_exept{
+    padding-bottom: 10px;
+}
+
+
+/*
+.samsung_footer_part2{
+    float:left;
+    width: 25%;
+    padding-left: 45px;
+    border-right: 1px solid #d7d7d7;
+}
+.samsung_footer_part3{
+    float:left;
+    width: 25%;
+    padding-left: 45px;
+    border-right: 1px solid #d7d7d7;
+}
+.samsung_footer_part4{
+    float:left;
+    width: 25%;
+    padding-left: 45px;
+}
+*/
+
+.samsung_footer_navi{
+   width: 1400px;
+    margin: auto;
+    overflow: hidden;
+     padding-top: 25px;
+     border-top: 1px solid gray;
+    text-align: center;
+}
+.samsung_footer_navi li:hover{
+    text-decoration: underline;
+}
+.samsung_footer_navi li{
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.samsung_footer_navi li a{
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 5px;
+}
+.samsung_footer_navi a:after{
+    content: 'ㅣ';
+    margin-left: 10px;
+}
+.samsung_footer_navi .footer_navi_privacy a{
+    color: #0ae4f2;
+}
+.samsung_footer_navi .footer_navi_bdmt a{
+    color:#f5940b;
+}
+
+.samsung_copy{
+    background-color: #27272b;
+    overflow: hidden;
+    height: 130px;
+}
+.samsung_copy_control{
+    width: 1500px;
+    margin: 0 auto;
+    padding-left: 45px;
+}
+.samsung_copy img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+.samsung_site_img{
+    float: left;
+}
+.samsung_ad_img{
+    float: left;
+    width: 50%;
+    margin-left: 40px;
+}
+.samsung_copy_logo{
+    width: 60%;
+    float: left;
+}
+.samsung_copyright{
+    width: 40%;
+    float: right;;
+}
+.samsung_copyright p{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+/* 삼성 푸터 끝*/
+/* 삼성 푸터 끝*/
+
+
+
+
+
+/*미디어 쿼리 시작*/
+/*미디어 쿼리 시작*/
+
+
+@media (max-width:640px){
+    #samsung_slide .mobile_pos{
+        bottom: 20px;
+    }
+    .samsung_mobile_news_title{
+        height: 80px;
+    }
+    .samsung_mobile_news ul li:last-child{
+        margin: 0;
+    }
+
+    .samsung_mobile_navi_title{
+        text-align: left;
+        padding-left: 15px;
+    }
+    .samsung_mobile_navi_con1, .samsung_mobile_navi_con2, .samsung_mobile_navi_con3, .samsung_mobile_navi_con4{
+        width: 100%;
+        display: block;
+    }
+    .samsung_main_nav_inner{
+        display: none;
+    }
+    .samsung_top_nav_right{
+        display: none;
+    }
+    .samsung_header{
+        height: 59px;
+    }
+    .samsung_main{
+        padding-top: 3rem;
+    }
+    .samsung_main_logo img{
+        width: 170px;
+    }
+    .samsung_main2_ipad_pic_control a{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .samsung_main_bridge1 h2{
+        font-size: 25px;
+    }
+    .samsung_footer_control{
+        display: none;
+    }
+    .samsung_copy_control{
+        padding: 0 15px;
+    }
+    .samsung_copy{
+        height: 180px;
+    }
+    .samsung_footer_navi{
+        text-align: left;
+    }
+    .samsung_company_pic1_1{
+        width: 100%;
+    }
+    .samsung_company_info1 ul{
+        display:block;
+        width: 100%;
+    }
+    .samsung_company_info2 ul{
+        display:block;
+        width: 100%;
+    }
+    .samsung_company_pic2_2{
+        width: 100%;
+    }
+    .samsung_company_pic3_3{
+        width: 100%;
+    }
+    .samsung_company_info ul{
+        height: 60px;
+    }
+    .samsung_company_info{
+        width: 100%;
+    }
+    .samsung_company_icon{
+        display: none;
+    }
+    .samsung_main_bridge1 h2{
+        margin:1% 0 3% 0;
+        letter-spacing: -1px;
+    }
+    .samsung_slide_talk{
+        padding-top: 5%;
+        padding-left: 8%;
+    }
+    .samsung_slide_surve{
+        display: none;
+    }
+    .samsung_slide_talk .samsung_slide_surve{
+        display: none;
+    }
+    .samsung_slide_title{
+        display: inline-block;
+        font-size: 30px;
+        margin: 0 0 5px 0;
+    }
+    .samsung_slide_title_control{
+        margin-bottom:10px;
+    }
+    .samsung_slide_title_addr{
+        font-size: 18px;
+    }
+    .samsung_slide_nav{
+         height: 30px;
+        line-height: 27px;
+        width: 140px;
+        font-size: 13px;
+    }
+    .samsung_mobile_news ul li{
+        width: 100%;
+/*        display: block;*/
+    }
+    .samsung_mobile_news_main{
+        border-bottom: 2px solid red;
+    }
+    .samsung_mobile_news ul li{
+        border-top: 0;
+    }
+    
+}
+
+@media (min-width:640px) and (max-width:800px){
+    .samsung_company_mobile_box_control img{
+        margin: 1% 5% 0 0
+    }
+    .samsung_footer_control{
+        display: none;
+    }
+    .samsung_footer_navi{
+        width: 100%;
+    }
+    .samsung_company_info a{
+        width: 100%;
+    }
+    .samsung_main_nav_inner{
+        font-size: 
+    }
+    .samsung_main_nav_inner li a{
+        font-size: 16px;
+        font-weight: bold;
+        width: 17%;
+    }
+    .samsung_main_bridge1 h2{
+        font-size: 30px;
+    }
+      .samsung_company_info{
+        width: 100%;
+        overflow: hidden;
+    }
+    .samsung_company_info_type1{
+        height: 20%;
+    }
+    .samsung_company_info1 ul{
+        display:block;
+        height: 30px;
+        width: 100%;
+        height: 50%;
+    }
+    .samsung_company_pic1_1{
+        width: 100%;
+    }
+    .samsung_company_info2 ul{
+        display:block;
+        width: 100%;
+    }
+    .samsung_company_pic2_2{
+        width: 100%;
+    }
+    .samsung_company_pic3_3{
+        width: 100%;
+    }
+    .samsung_company_info ul{
+        height: 65px;
+    }
+    .samsung_company_info{
+        width: 100%;
+    }
+    .samsung_copy{
+        height: 170px;
+    }
+    .samsung_slide_talk .samsung_slide_surve{
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 27px;
+    }
+    .samsung_slide_nav{
+        height: 40px;
+        line-height: 38px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .samsung_slide_title_addr{
+        font-size: 15px;
+    }
+    .samsung_slide_title{
+        font-size: 42px;
+    }
+}
+
+@media (max-width:800px){
+    .samsung_company_info{
+        display: none;
+    }
+    .samsung_footer_navi li{
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding: 8px 5px;
+    }
+    .samsung_footer_navi li a{
+        border: 0;
+        padding: 0;
+    }
+    .samsung_footer_navi a:after{
+        display: none;
+    }
+     .samsung_footer_part1{
+        border: 0px;
+    }
+    .samsung_footer_navi{
+        padding: 20px;
+        text-align: left;
+    }
+    .samsung_company_info{
+        height: 25%;
+    }
+    .samsung_company_plus_icon1{
+        display: none;
+    }
+    .samsung_company_plus_icon{
+        display: none;
+    }
+
+    .samsung_main_background_ipad_pic0{
+/*        height: 390px;*/
+/*        border: 3px solid red;*/
+
+    }
+
+    .samsung_copy_logo{
+        width: 100%;
+        overflow: hidden;
+    }
+    .samsung_site_img{
+        float: left;
+        width: auto;
+    }
+    .samsung_ad_img{
+        float: right;
+        width: auto;
+        margin: 0 0 0 0;
+    }
+    .samsung_copyright{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .samsung_copyright p{
+        padding: 30px 0 0 0;
+    }
+    .samsung_company_info dt{
+        top: 6%;
+    }
+    
+
+}
+
+@media (min-width:800px) and (max-width:1024px){
+    .samsung_main_nav_inner li a{
+        font-size: 18px;
+        font-weight: bold;
+        width: 15%;
+    }
+    .samsung_footer_control{
+        margin: 20px auto 50px auto;
+    }
+    .samsung_footer_part1{
+        height: 750px;
+    }
+    .samsung_footer_control h3{
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+     .samsung_footer_control h3 a{
+        font-size: 20px;
+    }
+    .samsung_footer_control h4{
+        padding-bottom: 5px 0;
+    }
+    .samsung_footer_control h4 a{
+        font-size: 16px;
+    }
+    .samsung_footer_part1 li a{
+        font-size: 13px;
+    }
+    .samsung_footer_part1 li{
+        margin: -10px auto;
+    }
+    .samsung_main_bridge1 h2{
+        font-size: 35px;
+    }
+    .samsung_copy{
+        height: 120px;
+    }
+    .samsung_site_img{
+        width: 45%
+    }
+    .samsung_ad_img{
+        margin: 0;
+    }
+    .samsung_copyright p{
+        padding-top: 40px;
+    }
+    .samsung_slide_talk .samsung_slide_surve{
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 27px;
+    }
+    .samsung_slide_nav{
+        height: 40px;
+        line-height: 38px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .samsung_slide_title_addr{
+        font-size: 20px;
+    }
+    .samsung_slide_title{
+        font-size: 45px;
+    }
+    
+    
+}
+
+@media(max-width:1024px){
+    .samsung_main_pic2{
+        display: none;
+    }
+    .samsung_main_pic1{
+        display: none;
+    }
+    .samsung_main_background_ipad_pic0{
+        display: block;
+        overflow: hidden;
+    }
+    .samsung_main_pic_background_ipad{
+        display: block;
+    }
+    .samsung_main_ipad_pic_inner img{
+        display: block;
+        top: 40%;
+    }
+    .samsung_copy img{
+        width: 34px;
+        height: 34px;
+    }
+    .background_wrap{
+        display: none;
+    }
+    .samsung_main_navi_ineer span{
+        font-size: 14px;
+    }
+    .samsung_main_navi_ineer h3{
+        font-size: 15px;
+    }
+    .samsung_main2_ipad_pic_control{
+        display: block;
+    }
+    .samsung_footer_control{
+        width: 100%;
+    }
+    .samsung_copy_control{
+        width: 100%;
+    }
+    .samsung_footer_navi{
+        width: 100%;
+        
+    } 
+    .samsung_company_info dt{
+        font-size: 22px;
+    }
+    .samsung_company_plus_icon img{
+        width: 20px;
+        left: 90%;
+    }
+    .samsung_company_plus_icon1 img{
+        width: 20px;
+        left: 90%;
+    }
+    .samsung_footer{
+        margin: 40px auto 0 auto;
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+    .samsung_main_news1{
+        height:100px;
+    }
+    .samsung_company_info dt{
+        font-size: 25px;
+    }
+    .samsung_slide_talk .samsung_slide_surve{
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 27px;
+    }
+    .samsung_slide_nav{
+        height: 40px;
+        line-height: 38px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .samsung_slide_title_addr{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1300px){
+    .samsung_main_news1{
+        height:120px;
+    }
+    .samsung_company_info dt{
+        font-size: 27px;
+    }
+    .samsung_slide_talk .samsung_slide_surve{
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 27px;
+    }
+    .samsung_slide_nav{
+        height: 40px;
+        line-height: 38px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .samsung_slide_title_addr{
+        font-size: 20px;
+    }
+}
+@media  (min-width:1300px) and (max-width:1500px){
+    .samsung_main_news1{
+        height: 140px;
+    }
+    .samsung_company_info dt{
+        font-size: 32px;
+    }
+    .samsung_main_navi h3{
+        font-size: 27px;
+    }
+    .samsung_main_navi_ineer1{
+        left:26%;
+    }
+    .samsung_main_navi_ineer2 {
+        left: 23%; 
+    }
+    .samsung_main_navi_ineer3 span{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+
+
+@media (max-width:1300px){
+    .samsung_main_navi h3{
+        font-size: 20px;
+    }
+    .samsung_main_navi span{
+        font-size: 14px;
+    }
+    .samsung_main_navi_ineer1{
+        left:26%;
+    }
+    .samsung_main_navi_ineer2 {
+        left: 27%; 
+    }
+    .samsung_main_navi_ineer3 span{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .samsung_main_news .samsung_main_news_title{
+        font-size: 15px;
+    }
+    
+    
+}
+@media (max-width:1500px){
+    .background_wrap{
+        padding: 0;
+    }
+    .samsung_main2_title{
+        padding-top: 13%;
+    }
+    .samsung_main2_title_top h2 a{
+        font-size: 50px;
+        
+    }
+    .samsung_main2_title_bottom li a{
+        font-size: 18px;
+    }
+    .samsung_main2_second_top h2 a{
+        font-size: 50px;
+    }
+    .samsung_main2_second_bottom li a{
+        font-size: 18px;
+    }
+    .samsung_main2_three_top h2 a{
+        font-size: 50px;
+    }
+    .samsung_main2_three_bottom li a{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1650px){
+    .wrap{
+        width: 100% !important;
+    }
+    .background_wrap{
+        width: 100%;
+/*        height: auto;*/
+    }
+    header{
+        width: 100%;
+    }
+    .samsung_main{
+        width: 100%;
+    }
+    .samsung_footer_control{
+        width: 100%;
+    }
+    .samsung_copy_control{
+        width: 100%;
+    }
+    .samsung_footer_navi{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:640px){
+    .samsung_mobile_menu{
+        display: none;
+    }
+    .samsung_mobile_menu_control{
+        display: none;
+    }
+}
+@media (min-width:800px){
+/*
+    .samsung_mobile_navi_box a .samsung_company_mobile_control{
+        display: none;
+    }
+*/
+    .samsung_company_mobile_control{
+        display: none;
+    }
+}
+@media (min-width:920px){
+    
+}
+@media (min-width:1024px){
+    .samsung_mobile_navi{
+        display: none;
+    }  
+    .samsung_mobile_news{
+        display: none;
+    }
+}

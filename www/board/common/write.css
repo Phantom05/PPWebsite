@@ -1,0 +1,174 @@
+#header{
+    overflow: hidden;
+    border-bottom: 1px solid #ececec;
+    background-color: rgba(0,0,0,0.8);
+    padding: 0px 50px;
+    
+}
+#header .header_nav li{
+    float: left;
+}
+#header .header_login li{
+    float: left;
+}
+#header .header_login{
+    float: right;
+}
+
+#header ul li a{
+    text-align: center;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px 10px;
+    display: block;
+    transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+#header ul li a:hover{
+    background-color: cadetblue;
+    color: #fff;
+    transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+.header_nav li:first-child a i{
+    padding: 0;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 40px;
+}
+
+/* 반응형 모바일 메뉴*/
+.header_mobile{
+    display: none;
+    overflow: hidden;
+}
+.header_mobile li{
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 0;
+}
+.header_mobile li i{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    padding: 50px;
+    border-top: 1px solid #ececec;
+    background-color: #f2f2f2;
+}
+footer>ul li{
+    float: left;
+    font-family: 'Nanum Gothic Coding';
+    font-size: .7rem;
+    color: #999;
+}
+footer>ul li a{
+    color: #999;
+    font-family: 'Nanum Gothic Coding';
+    font-size: .7rem;
+}
+footer>ul li a:hover{
+    color: orange;
+}
+footer>ul{
+    overflow: hidden;
+}
+footer>ul li:after{
+    padding: 0 15px;
+    content: 'ㅣ';
+    clear: both; 
+    color: #999;
+}
+footer>ul li:last-child:after{
+    display: none;
+}
+#footer_bottom{
+    overflow: hidden;
+}
+.footer_address{
+    float:left;
+    width: 70%;
+    margin-top: 20px;
+}
+.footer_address p{
+    font-family: 'Nanum Gothic Coding';
+    font-size: .7rem;
+    color: #999;
+}
+.footer_call{
+    float:left;
+    width: 30%;
+}
+.footer_call p{
+    font-family: 'Nanum Gothic Coding';
+    color: #999;
+    font-size: 1.5rem;
+}
+
+@media(max-width:1170px){
+    #wrap{
+        width: 100%;
+    }
+}
+@media(max-width:780px){
+    #header{
+        padding: 0 15px;
+    }
+    #header .header_nav, #header .header_login{
+        display: none;
+    }
+    #header .header_mobile{
+        display: block;
+    }
+    #main_nav{
+        display: none;
+    }
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #main_top{
+        text-align: center
+    }
+    footer{
+        position: static;
+    }
+    .main_category_ct{
+        display: none;
+    }
+    .main_search li:first-child{
+        display: none;
+    }
+    .main_info_write{
+        display: none;
+    }
+    .mobile_search{
+        display: block;
+    }
+    .main_search{
+        float: none;
+        display: block;
+    }
+
+}

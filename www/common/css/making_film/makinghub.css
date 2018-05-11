@@ -1,0 +1,515 @@
+a, .sec-contact .btn {
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+/*=Typography=*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-weight: 300;
+    background: #191919;
+}
+
+.font-open {
+    font-family: 'Open sans', sans-serif;
+}
+
+.navbar a,
+.sec-about p {
+    text-align: center;
+    color: #959595;
+    font-size: 1rem;
+
+}
+
+.navbar a {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar .fa-external-link {
+    font-size: 10px;
+}
+
+.main-heading {
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.bg-upcover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.container > h1 {
+   padding: 20px 0;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sec-about a {
+    text-decoration: underline;
+    color: #ececec;
+    font-size: 1rem
+}
+
+.sec-services h2,
+.sec-services p {
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+.sec-services p {
+    color: #959595;
+    font-size: 1rem;
+}
+
+.sec-testimonials p {
+    font-style: italic;
+    color: #959595;
+    font-size: 1rem;
+}
+
+.sec-contact .btn {
+    text-transform: uppercase;
+}
+
+.soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+}
+
+/*=Base=*/
+
+section {
+    padding: 5em 0;
+}
+
+footer {
+    padding: 3em 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 485px) {
+    form {
+        max-width: 70%;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+hr {
+    margin-bottom: 3em;
+    width: 7%;
+}
+
+/*=Layout=*/
+
+.sec-folio .row {
+    margin-bottom: 3em;
+}
+
+.sec-folio img {
+    max-width: 100%;
+    min-height: 100%;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+
+/*Header*/
+
+.navbar-default {
+    background: #111;
+    border: 0px;
+    padding: 10px;
+}
+
+.navbar .fa-external-link {
+    vertical-align: top;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+    color: #fff;
+}
+
+/*Main*/
+
+.sec-main {
+    position: relative;
+    height: 560px;
+    background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
+    background-size: cover;
+}
+
+.sec-main:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #fff;
+}
+
+/*About*/
+
+.sec-about a:hover,
+.sec-about a:focus {
+    color: #ad0000;
+}
+
+/*Services*/
+
+.sec-services {
+    background: #28282b;
+}
+
+.sec-services i {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 45px;
+    color: #fff;
+}
+
+.sec-services .fa-paint-brush {
+    width: 64px;
+}
+
+.sec-services .fa-code {
+    text-align: center;
+    width: 68px;
+}
+
+.sec-services h2 {
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+/*Testimonials*/
+
+.sec-testimonials {
+    background: #28282b;
+}
+
+/*Contact*/
+
+.sec-contact .form-control:focus {
+    border-color: #ad0000;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+}
+
+.sec-contact .btn {
+    padding: .5rem 1.75rem;
+    background: #000;
+    font-size: .95rem;
+    color: #fff;
+}
+
+.sec-contact .btn:hover,
+.sec-contact .btn:focus {
+    background: #ad0000;
+    border-color: #7a0000;
+}
+
+/*Footer*/
+
+footer {
+    background: #000;
+}
+
+.soc-media-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+    margin-left: 1em;
+}
+
+.soc-media-ul a {
+    display: block;
+    padding: 0.5em .65rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.soc-media-ul a:hover,
+.soc-media-ul a:focus {
+    color: #ad0000;
+}
+
+.col-box {
+    width: 370px;
+    height: 370px;
+    overflow: hidden;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    margin: 10px;
+    float: left;
+}
+
+.col-box > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.col-box > a:hover img {
+    opacity: .05;
+    background: #333;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.col-inner {
+    position: absolute;
+    bottom: 20px;
+    left: -10rem;
+    color:gray;
+    opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    font-size: 1rem;
+    z-index: 900;
+}
+
+.col-box > a:hover .col-inner {
+    -webkit-animation: showCol 1s forwards ease;
+            animation: showCol 1s forwards ease;
+}
+
+@-webkit-keyframes showCol {
+    0% {
+        opacity: 0;
+        left: -10rem;
+    }
+    100% {
+        opacity: 1;
+        left: 20px;
+    }
+}
+
+@keyframes showCol {
+    0% {
+        opacity: 0;
+        left: -10rem;
+    }
+    100% {
+        opacity: 1;
+        left: 20px;
+    }
+}
+
+
+
+.col-show-title {
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 200;
+    font-weight: bold;
+}
+
+.col-box > a:hover .col-show-title {
+    -webkit-animation: hideTitle 1s forwards ease;
+            animation: hideTitle 1s forwards ease;
+    opacity: 1;
+}
+
+@-webkit-keyframes hideTitle {
+    0% {
+        opacity: 1;
+        left: 1rem
+    }
+    100% {
+        opacity: 0;
+        left: -10rem
+    }
+}
+
+@keyframes hideTitle {
+    0% {
+        opacity: 1;
+        left: 1rem
+    }
+    100% {
+        opacity: 0;
+        left: -10rem
+    }
+}
+
+.col-show-middle {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    font-weight: bold;
+    font-family:sans-serif;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 10.5rem;
+    z-index: 200;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 100;
+}
+.col-box > a:hover .col-show-middle {
+    -webkit-animation: middleShow 1.5s .7s forwards ease;
+            animation: middleShow 1.5s .7s forwards ease;
+}
+
+@-webkit-keyframes middleShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes middleShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.col-show-top{
+    top: 8.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-weight: normal;
+    font-family: serif;
+}
+.split-top{
+    position: absolute;
+    height: 90px;
+    background: #000;
+    top: -90px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    transition: 1s;
+}
+.col-box > a:hover .split-top{
+    -webkit-animation: splitTop .5s forwards ease;
+            animation: splitTop .5s forwards ease;
+}
+@-webkit-keyframes splitTop{
+    0%{
+         top: -90px
+    }
+    100%{
+         top: -0;
+    }
+}
+@keyframes splitTop{
+    0%{
+         top: -90px
+    }
+    100%{
+         top: -0;
+    }
+}
+.split-bottom{
+    position: absolute;
+    height: 90px;
+    background: #000;
+    bottom: -90px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    transition: 1s;
+}
+.col-box > a:hover .split-bottom{
+    -webkit-animation: splitBottom .5s forwards ease;
+            animation: splitBottom .5s forwards ease;
+}
+@-webkit-keyframes splitBottom{
+    0%{
+         bottom: -90px
+    }
+    100%{
+         bottom: -0;
+    }
+}
+@keyframes splitBottom{
+    0%{
+         bottom: -90px
+    }
+    100%{
+         bottom: -0;
+    }
+}
+/**/
+
+@media (max-width:1200px) {
+    .col-box {
+        float: none;
+        margin: 10px auto;
+    }
+}
+@media (max-width:420px){
+    .col-box{
+        width: auto;
+        padding: 20px;
+    }
+}

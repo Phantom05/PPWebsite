@@ -1,0 +1,119 @@
+$base: 16;
+
+// Calculate pixels to rem units for font sizes
+@mixin font-size($f) {
+  font-size: $f+px;
+  font-size: $f/$base+rem;
+}
+
+// transitions
+@mixin transition($property, $duration) {
+	-webkit-transition: $property $duration ease-in-out;
+	-moz-transition: $property $duration ease-in-out;
+	transition: $property $duration ease-in-out;
+}
+
+$mq1: 666; // Mid range breakpoint
+$mq2: 800; // Med screen breakpoint
+$mq3: 1024; // Large screen breakpoint
+$mq4: 1325; // xlarge screen breakpoint
+
+body {
+  background: #2d2d2d;
+  font-family: Chaparral Pro;
+}
+
+h1.intro {
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-weight: 200;
+  @include font-size(26);
+  line-height: 1.3;
+  font-style: italic;
+  color: white;
+  text-align: center;
+
+  @media all and (min-width: $mq3/$base+em) {
+    @include font-size(30);
+  }
+
+  em {
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    @include font-size(28);
+    margin-bottom: 15px;
+    color: white;
+
+    @media all and (min-width: $mq3/$base+em) {
+      @include font-size(40);
+    }
+
+    .change-text {
+      width: 130px;
+      height: 28px;
+      display: inline-block;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,.6);
+      margin-bottom: -8px;
+
+      @media all and (min-width: $mq1/$base+em) {
+        height: 26px;
+        width: 127px;
+        margin-bottom: -6px;
+      }
+
+      @media all and (min-width: $mq2/$base+em) {
+        height: 28px;
+        width: 127px;
+        margin-bottom: -6px;
+      }
+
+      @media all and (min-width: $mq3/$base+em) {
+        width: 190px;
+        height: 34px;
+        margin-bottom: -6px;
+      }
+
+      &:before {
+        content: '';
+        background: white;
+        position: absolute;
+        right: -20px;
+        bottom: -1px;
+        height: 41px;
+        width: 20px;
+        display: none;
+      }
+
+
+      span {
+        @include transition(all, .4s);
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        line-height: 1;
+        clip: rect(0px, 0px, 198px, 0px);
+
+        &:after {
+          content: '';
+          background: white;
+          position: absolute;
+          right: -40px;
+          bottom: -1px;
+          height: 41px;
+          width: 10px;
+          display: none;
+        }
+      }
+
+      span.active {
+        @include transition(all, .85s);
+        opacity: 1;
+        clip: rect(0, 198px, 198px, 0px);
+      }
+    }
+  }
+}
